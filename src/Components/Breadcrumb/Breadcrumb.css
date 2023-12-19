@@ -1,7 +1,7 @@
 .breadcrumb-wrapper {
     display: flex;
     width: 1273px;
-    padding-right: 1199px;
+    /* padding-right: 1199px; */
     align-items: center;
     gap: 6px;
     margin: 0 auto;

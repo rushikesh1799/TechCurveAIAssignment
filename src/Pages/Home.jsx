@@ -24,7 +24,7 @@ function Home() {
             <Navbar />
             {navFlag && <MobileSideNav />}
             <DhruvaBanner />
-            <Breadcrumb />
+            <Breadcrumb propName="Home" />
             <Products />
             <div className="main-section">
                 <SideSection />

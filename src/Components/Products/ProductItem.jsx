@@ -32,7 +32,7 @@ function ProductItem({ product }) {
                     </div>
                     <div className="product-info-bottom">
                         <p className="description-text">
-                            {product.product_description}
+                            {product.product_description.slice(0, 90)}
                         </p>
                     </div>
                 </div>
