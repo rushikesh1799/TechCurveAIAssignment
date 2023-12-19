@@ -1,7 +1,10 @@
 import React from "react";
 import "./DhruvaBanner.css";
+import { useNavigate } from "react-router";
 
 function DhruvaBanner() {
+    const navigate = useNavigate();
+
     return (
         <div className="dhruva-banner-wrapper">
             <div className="dhruva-left-banner">
@@ -28,6 +31,12 @@ function DhruvaBanner() {
                         <h2 className="discounts-desc">Favorite Discounts</h2>
                     </div>
                     <h2 className="discounts-percentage">30 % OFF</h2>
+                    <div
+                        className="shop-now-btn-wrapper"
+                        onClick={() => navigate("/view-all-products")}
+                    >
+                        <button className="shop-now-btn">Shop Now</button>
+                    </div>
                 </div>
             </div>
         </div>
