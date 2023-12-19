@@ -1,0 +1,212 @@
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+}
+
+.footer-info-left {
+    display: flex;
+    padding: 40px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    align-self: stretch;
+
+    border-bottom: 1px solid #403D39;
+}
+
+.footer-companies {
+    display: flex;
+    padding: 30px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    align-self: stretch;
+}
+
+.address-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.conqt-logo {
+    width: 130px;
+    height: 35.572px;
+}
+
+.address-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.location-txt {
+    color: #403D39;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer-info-right {
+    display: flex;
+    align-items: flex-start;
+    gap: 150px;
+}
+
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.about-top {
+    display: flex;
+    padding: 10px 0px;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-title {
+    color: #0F2B95;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.about-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.about-bottom-option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.about-bottom-listItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-link {
+    color: #403D39;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    text-decoration: none;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    flex-shrink: 0;
+
+    background: linear-gradient(90deg, #0F2B95 0%, #468BFD 100%);
+}
+
+.copyright-text {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer-info-left {
+        gap: 96px;
+    }
+
+    .footer-info-right {
+        gap: 72px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-info-left {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+        align-self: stretch;
+
+        border-bottom: 1px solid #403D39;
+    }
+
+    .address-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .about-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .footer-info-right {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .footer-companies {
+        gap: 12px;
+        padding: 30px 0px;
+    }
+
+    .copyright-text {
+        font-size: 10px;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-info-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}

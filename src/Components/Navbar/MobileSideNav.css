@@ -1,0 +1,105 @@
+.mobile-nav-popup {
+    background: linear-gradient(90deg, #0F2B95 0%, #468BFD 100%);
+    box-shadow: 4px 3px 13px -1px #000;
+    -webkit-box-shadow: 4px 3px 13px -1px rgba(0, 0, 0, .75);
+    -moz-box-shadow: 4px 3px 13px -1px #000;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    margin-top: -100px;
+    padding-top: 50px;
+    position: fixed;
+    text-align: center;
+    width: 80%;
+    z-index: 50;
+}
+
+.logo-and-cancel {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.mobile-nav-logo {
+    width: 100px;
+}
+
+.logo-and-cancel>svg {
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+}
+
+.mobile-navbar-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    align-self: stretch;
+    gap: 30px;
+    padding: 0 20px;
+    margin: 12px 0px;
+}
+
+.mobile-navbar-bottom-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.mobile-navbar-bottom-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.vendor-and-customer {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.mobile-navbar-vendor-customer {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.mobile-navbar-vendor {
+    display: flex;
+    padding: 8px 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    background: #FFF;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.mobile-navbar-customer {
+    display: flex;
+    padding: 8px 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    background: #FFF;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 1024px) {
+    .mobile-nav-popup {
+        display: none;
+    }
+}

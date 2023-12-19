@@ -1,0 +1,34 @@
+.breadcrumb-wrapper {
+    display: flex;
+    width: 1273px;
+    padding-right: 1199px;
+    align-items: center;
+    gap: 6px;
+    margin: 0 auto;
+    margin-top: 42px;
+}
+
+.offer-txt {
+    color: #403D39;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@media screen and (max-width: 1024px) {
+    .breadcrumb-wrapper {
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .breadcrumb-wrapper {
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 0px;
+    }
+}
