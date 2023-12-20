@@ -1,8 +1,15 @@
-# React + Vite
+<div align="center">
+<!--   <img src="/public/logo.webp" height="100" width="100" alt="logo"/> -->
+  <h1>Tech Curve AI and Innovations Assignement</h1>
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## How to run the app locally?
+```
+$ git clone https://github.com/rushikesh1799/TechCurveAIAssignment.git
+$ cd TechCurveAIAssignment
+$ npm install
+$ npm start
+```
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Link
+[Tech Curve AI and Innovations](https://tech-curve-ai-assignment.netlify.app/)
