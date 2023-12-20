@@ -5,6 +5,8 @@ export const DataContext = createContext();
 
 const initialState = {
     products: [],
+    loading: true,
+    error: "",
     navFlag: false,
 };
 
@@ -18,6 +20,10 @@ export const DataProvider = ({ children }) => {
 
     useEffect(() => {
         const fetchProducts = async () => {
+            dispatch({
+                type: "SET_LOADING",
+                payload: true,
+            });
             try {
                 const response = await fetch(
                     "https://dev-api.conqt.com/api/product/Get-All-Products",
@@ -25,19 +31,28 @@ export const DataProvider = ({ children }) => {
                 );
                 const data = await response.json();
                 dispatch({
+                    type: "SET_LOADING",
+                    payload: false,
+                });
+                dispatch({
                     type: "GET_DATA",
                     payload: data.data,
                 });
             } catch (error) {
-                console.log("error", error);
+                dispatch({
+                    type: "SET_ERROR",
+                    payload: error.message,
+                });
             }
         };
         fetchProducts();
     }, []);
 
-    const { products, navFlag } = state;
+    const { products, navFlag, loading, error } = state;
     return (
-        <DataContext.Provider value={{ products, navFlag, dispatch }}>
+        <DataContext.Provider
+            value={{ products, navFlag, loading, error, dispatch }}
+        >
             {children}
         </DataContext.Provider>
     );
